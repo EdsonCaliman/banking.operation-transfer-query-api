@@ -1,0 +1,14 @@
+version: '3.4'
+
+services:
+  banking.operation.transfer.query.api:
+    image: ${DOCKER_REGISTRY-}bankingoperationtransferqueryapi
+    networks:
+      - backend
+    build:
+      context: .
+      dockerfile: Banking.Operation.Transfer.Query.Api/Dockerfile
+
+networks:
+  backend:
+    driver: bridge

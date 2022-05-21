@@ -1,0 +1,9 @@
+version: '3.4'
+
+services:
+  banking.operation.transfer.query.api:
+    container_name: transfer.query.api
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    ports:
+      - "8005:80"
