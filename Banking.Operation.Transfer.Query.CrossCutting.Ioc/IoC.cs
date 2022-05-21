@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.Configuration;
+﻿using Banking.Operation.Transfer.Query.CrossCutting.Ioc.Modules;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Net.Core.Template.CrossCutting.Ioc.Modules;
 
@@ -8,7 +9,7 @@ namespace Net.Core.Template.CrossCutting.Ioc
     {
         public static IServiceCollection ConfigureContainer(this IServiceCollection services, IConfiguration configuration)
         {
-            DataModule.Register(services, configuration);
+            MongoDbModule.Register(services, configuration);
             services.Register();
             return services;
         }

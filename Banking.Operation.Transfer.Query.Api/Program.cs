@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
 
-namespace Net.Core.Template.Api
+namespace Banking.Operation.Transfer.Query.Api
 {
     public class Program
     {

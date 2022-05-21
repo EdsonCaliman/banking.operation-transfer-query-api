@@ -6,25 +6,25 @@ namespace Net.Core.Template.Domain.Abstractions.Exceptions
 {
     [ExcludeFromCodeCoverage]
     [Serializable]
-    public class BussinessException : Exception
+    public class BusinessException : Exception
     {
-        public BussinessException()
+        public BusinessException()
         {
         }
 
-        public BussinessException(string message) : base(message)
+        public BusinessException(string message) : base(message)
         {
         }
 
-        public BussinessException(string message, Exception innerException) : base(message, innerException)
+        public BusinessException(string message, Exception innerException) : base(message, innerException)
         {
         }
 
-        protected BussinessException(SerializationInfo info, StreamingContext context) : base(info, context)
+        protected BusinessException(SerializationInfo info, StreamingContext context) : base(info, context)
         {
         }
 
-        public BussinessException(string type, string message) : base(message)
+        public BusinessException(string type, string message) : base(message)
         {
             Message = message;
             Type = type;

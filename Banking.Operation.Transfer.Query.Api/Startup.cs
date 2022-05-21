@@ -7,7 +7,7 @@ using Microsoft.OpenApi.Models;
 using Net.Core.Template.CrossCutting.Ioc;
 using Newtonsoft.Json;
 
-namespace Net.Core.Template.Api
+namespace Banking.Operation.Transfer.Query.Api
 {
     public class Startup
     {
@@ -44,7 +44,7 @@ namespace Net.Core.Template.Api
                      });
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Net.Core.Template.Api", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Banking.Operation.Transfer.Query.Api", Version = "v1" });
             });
         }
 
@@ -55,7 +55,7 @@ namespace Net.Core.Template.Api
             {
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Net.Core.Template.Api v1"));
+                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Banking.Operation.Transfer.Query.Api v1"));
             }
 
             app.UseRouting();
